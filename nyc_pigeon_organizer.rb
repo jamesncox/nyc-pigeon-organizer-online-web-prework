@@ -19,22 +19,22 @@ require 'pry'
 #         }
 #       }
 
-def nyc_pigeon_organizer(data)
-  new_hash = {}
+# def nyc_pigeon_organizer(data)
+#   new_hash = {}
   
-  data.each do |key, value|
-    # binding.pry
-    value.each do |attribute, pigeons|
-      binding.pry
-      pigeons.each do |pigeon|
-        # binding.pry 
-        new_hash[pigeon] ||= {}
-        new_hash[pigeon][key] ||= []
-        # binding.pry
-        new_hash[pigeon][key] << attribute.to_s
-      end
-    end
-  end
-  # binding.pry
-  new_hash
-end
+#   data.each do |key, value|
+#     # binding.pry
+#     value.each do |attribute, pigeons|
+#       binding.pry
+#       pigeons.each do |pigeon|
+#         # binding.pry 
+#         new_hash[pigeon] ||= {}
+#         new_hash[pigeon][key] ||= []
+#         # binding.pry
+#         new_hash[pigeon][key] << attribute.to_s
+#       end
+#     end
+#   end
+#   # binding.pry
+#   new_hash
+# end
