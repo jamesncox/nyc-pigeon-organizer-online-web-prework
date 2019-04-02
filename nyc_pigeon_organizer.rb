@@ -21,9 +21,11 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_hash = {}
-
+  
   data.each do |key, value|
+    # binding.pry
     value.each do |attribute, pigeons|
+      binding.pry
       pigeons.each do |pigeon|
         # binding.pry 
         new_hash[pigeon] ||= {}
@@ -36,4 +38,3 @@ def nyc_pigeon_organizer(data)
   # binding.pry
   new_hash
 end
-
